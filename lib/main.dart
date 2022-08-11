@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Singleton States",
+      title: "Singleton States 2222222222",
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
