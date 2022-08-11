@@ -9,8 +9,7 @@ class RegisterPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Register Page"),
       ),
-      body: Align(
-        alignment: Alignment.center,
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
