@@ -20,7 +20,9 @@ class RegisterPage extends StatelessWidget {
             ),
             MaterialButton(
               color: Colors.greenAccent,
-              child: Text("Actualizar Experiencia",),
+              child: Text(
+                "Actualizar Experiencia",
+              ),
               onPressed: () {},
             ),
             MaterialButton(

@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_codigo5_state/pages/register_page.dart';
 
 class HomePage extends StatelessWidget {
-  final StreamController<int> _streamController = StreamController();
+  // final StreamController<int> _streamController = StreamController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Navigator.push(
-          //     context, MaterialPageRoute(builder: (context) => RegisterPage()));
-          _streamController.add(2000);
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => RegisterPage()));
+          // _streamController.add(2000);
         },
         child: Icon(Icons.add),
       ),
@@ -22,24 +22,7 @@ class HomePage extends StatelessWidget {
           "Home",
         ),
         actions: [
-          StreamBuilder(
-            stream: _streamController.stream,
-            builder: (BuildContext context, AsyncSnapshot snap) {
-              if (snap.hasData) {
-                int data = snap.data;
-                return Container(
-                  margin: EdgeInsets.all(10.0),
-                  child: Text(
-                    data.toString(),
-                    style: TextStyle(
-                      fontSize: 20.0,
-                    ),
-                  ),
-                );
-              }
-              return SizedBox();
-            },
-          ),
+
         ],
       ),
       body: Padding(
